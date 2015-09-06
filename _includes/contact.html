@@ -1,0 +1,20 @@
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>More Info</h2>
+                <p><a href="http://www.hollowearthradio.org">Hollow Earth Radio</a>- Soon to be KHUH 100.3, with your generous donation to our <a href="">IndieGoGo</a> campaign.</p>
+                <p><a href="http://medium.com/timetravelparty">Late Breaking News</a>- Follow us on Medium, to learn more details about our upcoming Time Travel events, shared stories, and opportunities to participate.</p>
+
+                <p><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
